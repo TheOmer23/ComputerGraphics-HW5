@@ -151,7 +151,7 @@ const sideNet2 = createTriangleMesh(sideNetVertices2, netMaterial);
 scene.add(sideNet2);
 
 // Ball
-const ballGeometry = new THREE.SphereGeometry(goalHeight / 8, 32, 32);
+const ballGeometry = new THREE.SphereGeometry(goalHeight / 16, 32, 32);
 const ballMatrix = new THREE.Matrix4().makeTranslation(0, goalHeight / 2, goalHeight / 2);
 const ball = new THREE.Mesh(ballGeometry, blackMaterial);
 ball.applyMatrix4(ballMatrix);
